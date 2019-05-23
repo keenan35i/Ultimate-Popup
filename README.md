@@ -21,7 +21,7 @@ This method closes a given popup, if popup is not given it will close the active
 ```javascript
 Up.closePopup( popup );
 ```
-### closeAll( popup )
+### closeAll()
 This method closes all popups.
 #### Example:
 ```javascript
