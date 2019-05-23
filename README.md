@@ -25,7 +25,7 @@ Up.closePopup( popup );
 This method closes all popups.
 #### Example:
 ```javascript
-Up.closeAll( popup );
+Up.closeAll();
 ```
 ### openWindow( popup )
 This method opens a minimized popup.
