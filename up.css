@@ -2,7 +2,7 @@
 #up-popups .popup .close-popup{float:none;opacity:1;position:absolute;right:0;font:normal normal normal 14px/1;top:0;text-align:center;width:44px;height:44px;line-height:44px;color:#fff;text-shadow:none;cursor:pointer}
 #up-popups .popup.has-footer .page-content{height:calc(100% - 83px)}
 #up-popups .popup.active{z-index:9999999}
-#up-popups .popup.leftJustify{width:50%!important;top:0;transform:translate3d(0,0,0)!important;right:auto;height:100%!important}
+#up-popups .popup.leftJustify{width:50%!important;top:0;transform:translate3d(0,0,0)!important;left: 0 !important;right:auto;height:100%!important}
 #up-popups .popup.rightJustify{width:50%!important;top:0;transform:translate3d(0,0,0)!important;left:auto;height:100%!important}
 #up-popups .popup .navbar .title{line-height:44px;font-size:17px;color:#fff;padding:0 11px;width:calc(100% - 80px);overflow:hidden;height:100%;text-overflow:ellipsis;background:transparent;border:none}
 #up-popups .popup .min{float:none;opacity:1;position:absolute;right:44px;font:normal normal normal 10px/1 FontAwesome;top:0;text-align:center;width:44px;height:44px;line-height:44px;color:#fff;text-shadow:none;cursor:pointer}

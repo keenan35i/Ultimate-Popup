@@ -132,7 +132,7 @@ var Up = {
       var x, y;
       var startPointx = 0;
       var startPointy = 0;
-      popup.find('.navbar .title').on('mousedown', function(e) {
+      popup.find('.navbar .title').on('mousedown touchstart', function(e) {
         e.stopPropagation();
         e.preventDefault();
         Up.updateActiveWindow(popup);
@@ -142,15 +142,15 @@ var Up = {
         yoffset = e.pageY;
         $elem.removeClass('leftJustify').removeClass('rightJustify');
         Up.body.addClass('no-select');
-        Up.body.on('mousemove', function(j) {
+        Up.body.on('mousemove touchmove', function(j) {
           if (pressed) {
             x = (j.pageX - xoffset + startPointx);
             y = (j.pageY - yoffset + startPointy);
             $elem.css('transform', 'translate3d( ' + x + 'px, ' + y + 'px,0 )');
           }
         });
-        Up.body.one('mouseup', function() {
-          Up.body.off('mousemove');
+        Up.body.one('mouseup touchend', function() {
+          Up.body.off('mousemove touchmove');
           startPointx = x;
           startPointy = y;
           pressed = false;
